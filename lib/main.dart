@@ -26,7 +26,7 @@ class Lab06 extends StatelessWidget {
                     TextButton(
                       onPressed: () {},
                       child: Icon(Icons.closed_caption_rounded),
-                    )
+                    ),
                   ],
                   ),
                   ),
