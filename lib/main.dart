@@ -11,6 +11,14 @@ class Lab06 extends StatelessWidget {
     return MaterialApp(
       title: 'Advanced UI',
       home: Scaffold(
+        bottomNavigationBar: BottomNavigationBar(
+          items: [
+            BottomNavigationBarItem(
+              icon: Icon(Icons.home), label: "Home"),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.power), label: "Power"),
+          ],
+        ),
         drawer: Drawer(
           child: ListView(
             children: [
@@ -52,6 +60,8 @@ class Lab06 extends StatelessWidget {
                     "https://images.unsplash.com/photo-1635805737707-575885ab0820?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"),
                 Image.network(
                     "https://images.unsplash.com/photo-1635805739892-ab7b431400f7?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"),
+                Image.network(
+                    "https://images.unsplash.com/photo-1732445027511-4a6cde297c31?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNnx8fGVufDB8fHx8fA%3D%3D"),
               ],
             ),
           ),
